@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+<section class="py-5 bg-white">
+    <div class="container mx-auto px-4 max-w-lg">
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Contactanos</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/+541156005974"
+          class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition"
+        >
+          <i class="fab fa-whatsapp text-2xl text-green-500"></i>
+          <span class="text-lg font-medium text-gray-800">WhatsApp</span>
+        </a>
+
+        <!-- Email -->
+        <a
+          href="mailto:Federicodegennaro81@gmail.com"
+          class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition"
+        >
+          <i class="fas fa-envelope text-2xl text-blue-500"></i>
+          <span class="text-lg font-medium text-gray-800">E-Mail</span>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/fletes_y_mudanzas_caba_y_gran_"
+          class="flex items-center space-x-3 p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition"
+        >
+          <i class="fab fa-instagram text-2xl text-pink-500"></i>
+          <span class="text-lg font-medium text-gray-800">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

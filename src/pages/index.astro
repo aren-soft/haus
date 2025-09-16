@@ -1,0 +1,282 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import background from '../assets/background.jpg';
+---
+
+<BaseLayout>
+  <img id="background" src={background.src} alt="" fetchpriority="high" />
+
+  <section id="hero" class="flex flex-col items-center justify-center text-center">
+    <h1 class="text-5xl font-bold mb-8">HAUS Reparaciones</h1>
+    <p class="text-lg mb-2">🌎 Trabajamos en CABA y alrededores.</p>
+  </section>
+
+  <section id="services">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Qué hacemos</h2>
+      <div class="services-carousel relative">
+        <div class="services-track flex transition-transform duration-300 ease-in-out">
+          <div class="service-slide flex-none w-full md:w-1/2 lg:w-1/4 px-2">
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center h-full">
+              <div class="text-4xl mb-4">🧱</div>
+              <h3 class="text-xl font-bold mb-2">Albañilería</h3>
+              <p class="text-gray-600">Reformas, revoques, contrapisos, reparación de paredes y estructuras.</p>
+            </div>
+          </div>
+          <div class="service-slide flex-none w-full md:w-1/2 lg:w-1/4 px-2">
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center h-full">
+              <div class="text-4xl mb-4">🔧</div>
+              <h3 class="text-xl font-bold mb-2">Plomería</h3>
+              <p class="text-gray-600">Instalaciones, reparaciones, destapaciones y mantenimiento de cañerías.</p>
+            </div>
+          </div>
+          <div class="service-slide flex-none w-full md:w-1/2 lg:w-1/4 px-2">
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center h-full">
+              <div class="text-4xl mb-4">🏠</div>
+              <h3 class="text-xl font-bold mb-2">Pintura</h3>
+              <p class="text-gray-600">Pintura interior y exterior, preparación de superficies y acabados.</p>
+            </div>
+          </div>
+          <div class="service-slide flex-none w-full md:w-1/2 lg:w-1/4 px-2">
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center h-full">
+              <div class="text-4xl mb-4">🏢</div>
+              <h3 class="text-xl font-bold mb-2">Impermeabilización</h3>
+              <p class="text-gray-600">Impermeabilización de terrazas, refuerzos en puntos sensibles y aplicación de membranas.</p>
+            </div>
+          </div>
+          <div class="service-slide flex-none w-full md:w-1/2 lg:w-1/4 px-2">
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center h-full">
+              <div class="text-4xl mb-4">👷</div>
+              <h3 class="text-xl font-bold mb-2">Durlock</h3>
+              <p class="text-gray-600">Instalación, reparación y terminación de sistemas de construcción en seco.</p>
+            </div>
+          </div>
+        </div>
+        <button class="services-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition z-10">
+          ‹
+        </button>
+        <button class="services-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition z-10">
+          ›
+        </button>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 py-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Cómo lo hacemos</h2>
+      <div class="works-carousel relative">
+        <div class="works-track flex transition-transform duration-300 ease-in-out">
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_1.jpeg" alt="Trabajo realizado 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_2.jpeg" alt="Trabajo realizado 2" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_3.jpeg" alt="Trabajo realizado 3" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_4.jpeg" alt="Trabajo realizado 4" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_5.jpeg" alt="Trabajo realizado 5" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_6.jpeg" alt="Trabajo realizado 6" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_7.jpeg" alt="Trabajo realizado 7" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_8.jpeg" alt="Trabajo realizado 8" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+          <div class="work-slide flex-none w-full md:w-1/2 lg:w-1/3 px-2">
+            <img src="/images/work_9.jpeg" alt="Trabajo realizado 9" class="w-full h-64 object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+        <button class="works-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition z-10">
+          ‹
+        </button>
+        <button class="works-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition z-10">
+          ›
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="hero" class="flex flex-col items-center justify-center text-center">
+    <a href="/contact" class="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+      📱 Pedí tu presupuesto
+    </a>
+  </section>
+</BaseLayout>
+
+<style>
+	#background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(100px);
+	}
+
+	#hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 16px;
+	}
+
+	.services-carousel, .works-carousel {
+		overflow: hidden;
+		touch-action: pan-y; /* Allow vertical scrolling but handle horizontal swipes */
+		user-select: none; /* Prevent text selection during swipes */
+	}
+
+	.services-track, .works-track {
+		transform: translateX(0);
+		cursor: grab;
+	}
+
+	.services-track:active, .works-track:active {
+		cursor: grabbing;
+	}
+
+	/* Hide scrollbar on mobile */
+	.services-carousel::-webkit-scrollbar,
+	.works-carousel::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Ensure images don't interfere with touch events */
+	.work-slide img {
+		pointer-events: none;
+		user-select: none;
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// Touch/Swipe handling function
+		function addSwipeSupport(carousel, track, slides, currentIndex, updateFunction) {
+			let startX = 0;
+			let startY = 0;
+			let distX = 0;
+			let distY = 0;
+			let threshold = 100; // minimum distance for swipe
+			let restraint = 100; // maximum distance perpendicular to swipe direction
+			let allowedTime = 300; // maximum time allowed to travel that distance
+			let startTime = 0;
+
+			carousel.addEventListener('touchstart', function(e) {
+				const touchObj = e.changedTouches[0];
+				startX = touchObj.pageX;
+				startY = touchObj.pageY;
+				startTime = new Date().getTime();
+				e.preventDefault();
+			});
+
+			carousel.addEventListener('touchmove', function(e) {
+				e.preventDefault(); // prevent scrolling when inside carousel
+			});
+
+			carousel.addEventListener('touchend', function(e) {
+				const touchObj = e.changedTouches[0];
+				distX = touchObj.pageX - startX;
+				distY = touchObj.pageY - startY;
+				const elapsedTime = new Date().getTime() - startTime;
+
+				if (elapsedTime <= allowedTime) {
+					if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+						if (distX > 0) {
+							// Swipe right - go to previous
+							currentIndex.value = currentIndex.value > 0 ? currentIndex.value - 1 : slides.length - 1;
+						} else {
+							// Swipe left - go to next
+							currentIndex.value = currentIndex.value < slides.length - 1 ? currentIndex.value + 1 : 0;
+						}
+						updateFunction();
+					}
+				}
+				e.preventDefault();
+			});
+		}
+
+		// Services carousel
+		const servicesCarousel = document.querySelector('.services-carousel');
+		const servicesTrack = document.querySelector('.services-track');
+		const servicePrevBtn = document.querySelector('.services-prev');
+		const serviceNextBtn = document.querySelector('.services-next');
+		const serviceSlides = document.querySelectorAll('.service-slide');
+		let currentServiceIndex = { value: 0 };
+
+		function updateServicesCarousel() {
+			const slideWidth = serviceSlides[0].offsetWidth;
+			servicesTrack.style.transform = `translateX(-${currentServiceIndex.value * slideWidth}px)`;
+		}
+
+		servicePrevBtn.addEventListener('click', () => {
+			currentServiceIndex.value = currentServiceIndex.value > 0 ? currentServiceIndex.value - 1 : serviceSlides.length - 1;
+			updateServicesCarousel();
+		});
+
+		serviceNextBtn.addEventListener('click', () => {
+			currentServiceIndex.value = currentServiceIndex.value < serviceSlides.length - 1 ? currentServiceIndex.value + 1 : 0;
+			updateServicesCarousel();
+		});
+
+		// Add swipe support to services carousel
+		addSwipeSupport(servicesCarousel, servicesTrack, serviceSlides, currentServiceIndex, updateServicesCarousel);
+
+		// Works carousel
+		const worksCarousel = document.querySelector('.works-carousel');
+		const worksTrack = document.querySelector('.works-track');
+		const workPrevBtn = document.querySelector('.works-prev');
+		const workNextBtn = document.querySelector('.works-next');
+		const workSlides = document.querySelectorAll('.work-slide');
+		let currentWorkIndex = { value: 0 };
+		let autoPlayInterval;
+
+		function updateWorksCarousel() {
+			const slideWidth = workSlides[0].offsetWidth;
+			worksTrack.style.transform = `translateX(-${currentWorkIndex.value * slideWidth}px)`;
+		}
+
+		function startAutoPlay() {
+			autoPlayInterval = setInterval(() => {
+				currentWorkIndex.value = currentWorkIndex.value < workSlides.length - 1 ? currentWorkIndex.value + 1 : 0;
+				updateWorksCarousel();
+			}, 4000);
+		}
+
+		function stopAutoPlay() {
+			if (autoPlayInterval) {
+				clearInterval(autoPlayInterval);
+			}
+		}
+
+		workPrevBtn.addEventListener('click', () => {
+			stopAutoPlay();
+			currentWorkIndex.value = currentWorkIndex.value > 0 ? currentWorkIndex.value - 1 : workSlides.length - 1;
+			updateWorksCarousel();
+			startAutoPlay();
+		});
+
+		workNextBtn.addEventListener('click', () => {
+			stopAutoPlay();
+			currentWorkIndex.value = currentWorkIndex.value < workSlides.length - 1 ? currentWorkIndex.value + 1 : 0;
+			updateWorksCarousel();
+			startAutoPlay();
+		});
+
+		// Add swipe support to works carousel
+		addSwipeSupport(worksCarousel, worksTrack, workSlides, currentWorkIndex, () => {
+			stopAutoPlay();
+			updateWorksCarousel();
+			startAutoPlay();
+		});
+
+		// Start auto-play for works carousel
+		startAutoPlay();
+	});
+</script>
